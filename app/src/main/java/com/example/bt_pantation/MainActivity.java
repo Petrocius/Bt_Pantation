@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        Toast.makeText(MainActivity.this,"Adatok elküldve.",Toast.LENGTH_SHORT).show();
 
     }
 
@@ -132,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        Toast.makeText(MainActivity.this,"Ventillátor elindítva.",Toast.LENGTH_SHORT).show();
 
     }
 }
